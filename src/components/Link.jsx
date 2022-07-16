@@ -3,13 +3,37 @@ import ctl from "@netlify/classnames-template-literals"
 
 const Link = ({ href, variant, text, children }) => {
 	const linkStyle = ctl(`
-  focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto bg-sky-500 highlight-white/20 hover:bg-sky-400
+  focus:outline-none 
+  border 
+  w-[164px] 
+  border-transparent 
+  text-[12px]
+  font-semibold 
+  h-12 
+  px-6 
+  rounded-lg 
+  flex 
+  items-center 
+  justify-center 
   ${
 		variant === "primary" &&
 		`
+		hover:border-sky-500 
+		text-white 
+		bg-sky-500 
+		hover:bg-transparent
 
   `
-	}`)
+	}
+	${
+		variant === "secondary" &&
+		`
+  hover:bg-sky-500 
+  bg-transparent
+  border-sky-500
+  `
+	}
+	`)
 	return (
 		<a href={href} className={linkStyle}>
 			{text || children}
