@@ -55,7 +55,7 @@ function App() {
 					})}
 				</ul>
 				<p className='mt-4'>
-					Please kindly note that this website has not affiliation with
+					Please kindly note that this website has no affiliation with
 					TailwindCSS
 				</p>
 			</footer>

@@ -7,8 +7,7 @@ const Link = ({ href, variant, text, children }) => {
   border 
   w-[164px] 
   border-transparent 
-  text-[12px]
-  font-semibold 
+  text-sm
   h-12 
   px-6 
   rounded-lg 
