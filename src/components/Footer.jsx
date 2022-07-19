@@ -9,7 +9,7 @@ export default function Footer() {
 					const { name, url } = socialMediaHandle
 
 					return (
-						<li index={name} className='inline-block text-slate-400'>
+						<li key={name} className='inline-block text-slate-400'>
 							<a
 								href={url}
 								className='hover:text-white'

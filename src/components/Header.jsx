@@ -26,10 +26,10 @@ export default function Header() {
 				id='watch-video'
 				src={process.env.REACT_APP_YOUTUBE_VIDEO_URL}
 				title='YouTube video player'
-				frameborder='0'
+				frameBorder='0'
 				allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 				className={iframeStyle}
-				allowfullscreen></iframe>
+				allowFullScreen></iframe>
 		</header>
 	)
 }
