@@ -16,7 +16,9 @@ export default function Header() {
 				<Link href='#watch-video' variant='primary'>
 					Watch Video
 				</Link>
-				<Link href='#watch-video' variant='secondary'>
+				<Link
+					href='https://github.com/aremu-smog/tailwindcss-tips'
+					variant='secondary'>
 					View Code
 				</Link>
 			</div>
